@@ -1,0 +1,16 @@
+<div class="w3-container">
+  <ul class="w3-ul w3-card w3-round-large w3-display-middle w3-white">
+    <li *ngFor="let user of users" class="w3-bar">
+      <div *ngIf="user.id !== currentUser.id">
+      <span class="w3-bar-item w3-button w3-white w3-xlarge w3-right" routerLink="/dialog" [queryParams]="{id:user.id}">
+      <mat-icon>chat</mat-icon> </span>
+<!--      <img src="img_avatar2.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">-->
+      <div class="w3-bar-item">
+        <span class="w3-large">{{user.surname}} {{user.name}}</span><br>
+
+      </div>
+      </div>
+    </li>
+  </ul>
+</div>
+

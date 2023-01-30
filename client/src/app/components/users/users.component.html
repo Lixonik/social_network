@@ -1,0 +1,23 @@
+<div class="w3-container">
+  <ul class="w3-ul w3-card w3-round-large w3-white w3-margin">
+    <h2 class="w3-bar-item w3-xlarge w3-margin-left">Friends</h2>
+    <li *ngFor="let user of friends" class="w3-bar">
+      <button (click)="deleteFriend(user.id)" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">
+      <mat-icon>delete</mat-icon></button>
+        <div class="w3-bar-item">
+          <span class="w3-large">{{user.surname}} {{user.name}}</span><br>
+        </div>
+    </li>
+  </ul>
+
+  <ul class="w3-ul w3-card w3-round-large  w3-white w3-margin">
+    <h2 class="w3-bar-item w3-xlarge w3-margin-left">Not friends</h2>
+    <li *ngFor="let user of notFriends" class="w3-bar">
+      <button (click)="addFriend(user.id)" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">
+      <mat-icon>add</mat-icon> </button>
+      <div class="w3-bar-item">
+        <span class="w3-large">{{user.surname}} {{user.name}}</span><br>
+      </div>
+    </li>
+  </ul>
+</div>

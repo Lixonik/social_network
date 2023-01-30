@@ -1,0 +1,44 @@
+<div id="app">
+  <nav class="navbar px-3 navbar-dark bg-dark">
+    <a  class="navbar-brand" routerLink="login">Network</a>
+
+    <ul class="nav justify-content-end">
+      <li class="nav-item text-light" *ngIf="!isLoggedIn">
+        <a class="nav-link text-light" routerLink="registration">Sign Up</a>
+      </li>
+
+
+      <li class="nav-item" *ngIf="!isLoggedIn">
+        <a class="nav-link text-light" routerLink="login">Login</a>
+      </li>
+
+      <li class="nav-item" *ngIf="isLoggedIn">
+        <a class="nav-link text-light" routerLink="profile">{{ name }}</a>
+      </li>
+
+      <li class="nav-item" *ngIf="isLoggedIn">
+        <a class="nav-link text-light" routerLink="users">Users</a>
+      </li>
+
+      <li class="nav-item" *ngIf="isLoggedIn">
+        <a class="nav-link text-light" routerLink="news">News</a>
+      </li>
+
+      <li class="nav-item" *ngIf="isLoggedIn">
+        <a class="nav-link text-light" routerLink="messenger">Messenger</a>
+      </li>
+
+      <li class="nav-item" *ngIf="showAdminBoard && isLoggedIn">
+          <a href="http://localhost:5000/users" class="nav-link text-light">Admin Board</a>
+      </li>
+
+      <li class="nav-item" *ngIf="isLoggedIn">
+        <a href class="nav-link text-light" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

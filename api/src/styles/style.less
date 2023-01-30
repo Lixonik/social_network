@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@1&family=Montserrat:ital,wght@1,700&display=swap');
+
+@card-static-color: rgb(13, 28, 47);
+@card-choose-color: rgb(38, 61, 89);
+@text-color: #fff;
+@offset-bottom-block: 5vh; 
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif !important;
+    background-image: url(../images/background.jpg);
+    background-repeat: repeat;
+    color: @text-color !important;
+}
+
+.btn, a {
+    color: @text-color !important;
+}
+
+nav {
+    background-color: @card-choose-color !important;
+}
+
+.news {
+    margin-bottom: @offset-bottom-block !important;
+}
+
+.each-user {
+    background-color: @card-static-color !important;
+}
+
+.form-control {
+    background-color: @card-static-color !important;
+    color: @text-color !important;
+}
+
+.each-user:hover {
+    background-color: @card-choose-color;
+}
+
+.form-control {
+    border-style: none !important;
+}
+
+.avatar > img {
+    width: 5vw !important;
+    height: 10vh !important; 
+    border-radius: 100px !important;
+}
+
+.card {
+    border-radius: 40px !important;
+}
+
+.row {
+    justify-content: space-between !important;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.no-news {
+    background-color: @card-static-color !important;
+}
+
+.block {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}

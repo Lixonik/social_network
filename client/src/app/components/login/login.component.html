@@ -1,0 +1,68 @@
+<div class="col-md-4 mx-auto" style="width: 500px; height: 500px; margin-top: 30vh;">
+  <div class="card card-container py-3">
+    <label style="margin-left: 230px">Login</label>
+    <form
+      *ngIf="!isLoggedIn"
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+      class="row justify-content-center"
+    >
+      <div class="form-group py-3">
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          [(ngModel)]="form.email"
+          required
+          #email="ngModel"
+          placeholder="email"
+        />
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="!email.valid && (email.dirty || email.touched)"
+        >
+          email is required!
+        </div>
+      </div>
+      <div class="form-group py-3">
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          [(ngModel)]="form.password"
+          required
+          minlength="4"
+          #password="ngModel"
+          placeholder="password"
+        />
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="f.submitted && password.invalid"
+        >
+          <div *ngIf="(password.dirty || password.touched)">Password is required</div>
+          <div *ngIf="!password.valid">
+            Password must be at least 4 characters
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary btn-block justify-content-center" style="margin-left: 225px">
+          Login
+        </button>
+      </div>
+      <div class="form-group">
+        <div
+          class="alert alert-danger"
+          role="alert"
+          *ngIf="f.submitted && isLoginFailed"
+        >
+          Login failed: {{ errorMessage }}
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

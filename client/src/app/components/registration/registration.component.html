@@ -1,0 +1,108 @@
+<div class="col-md-6" style="margin-top: 25vh; margin-left: 15vw">
+  <div class="card card-container">
+    <label style="margin: 1vh 15vw">Sign Up</label>
+    <form
+      *ngIf="!isSuccessful"
+      name="form"
+      (ngSubmit)="f.form.valid && onSubmit()"
+      #f="ngForm"
+      novalidate
+    >
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          name="surname"
+          [(ngModel)]="form.surname"
+          required
+          #surname="ngModel"
+          placeholder="surname"
+        />
+        <div class="alert-danger" *ngIf="(surname.dirty || email.touched)">surname is required</div>
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          name="name"
+          [(ngModel)]="form.name"
+          required
+          #name="ngModel"
+          placeholder="name"
+        />
+        <div class="alert-danger" *ngIf="(name.dirty || name.touched)">name is required</div>
+      </div>
+
+      <div class="form-group">
+        <input
+          type="text"
+          class="form-control"
+          name="patronimyc"
+          [(ngModel)]="form.patronimyc"
+          #patronimyc="ngModel"
+          placeholder="patronimyc"
+        />
+      </div>
+
+      <div class="form-group">
+        <input
+          type="date"
+          class="form-control"
+          name="birthday"
+          [(ngModel)]="form.birthday"
+          required
+          #birthday="ngModel"
+          placeholder="birthday"
+        />
+        <div class="alert-danger" *ngIf="(birthday.dirty || birthday.touched)">name is required</div>
+      </div>
+
+      <div class="form-group">
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          [(ngModel)]="form.email"
+          required
+          email
+          #email="ngModel"
+        />
+
+          <div *ngIf="(email.dirty || email.touched)">Email is required</div>
+          <div *ngIf="!email.valid">
+            Email must be a valid email address
+          </div>
+      </div>
+
+      <div class="form-group">
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          [(ngModel)]="form.password"
+          required
+          minlength="4"
+          #password="ngModel"
+        />
+        <div class="alert-danger" *ngIf="f.submitted && password.invalid">
+          <div *ngIf="(password.dirty || password.touched)">Password is required</div>
+          <div *ngIf="!password.valid">
+            Password must be at least 4 characters
+          </div>
+        </div>
+      </div>
+      <div class="form-group" style="margin: 1vh 15vw; width: 5vw">
+        <button class="btn btn-primary btn-block">Sign Up</button>
+      </div>
+
+      <div class="alert alert-warning" *ngIf="f.submitted && isRegistrationFailed">
+        Signup failed!<br />{{ errorMessage }}
+      </div>
+    </form>
+
+    <div class="alert alert-success" *ngIf="isSuccessful">
+      Your registration is successful!
+    </div>
+  </div>
+</div>

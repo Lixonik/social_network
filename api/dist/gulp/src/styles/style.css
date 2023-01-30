@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jetbrainsmono/v13/tDba2o-flEEny0FZhsfKu5WU4xD-IQ-PuZJJXxfpAO-LflOQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUFjIg1_i6t8kCHKm459Wx7xQYXK0vOoz6jq0N6aX8.ttf) format('truetype');
+}
+body {
+  font-family: 'Montserrat', Arial, sans-serif !important;
+  background-image: url(../images/background.jpg);
+  background-repeat: repeat;
+  color: #fff !important;
+}
+.btn,
+a {
+  color: #fff !important;
+}
+nav {
+  background-color: #263d59 !important;
+}
+.news {
+  margin-bottom: 5vh !important;
+}
+.each-user {
+  background-color: #0d1c2f !important;
+}
+.form-control {
+  background-color: #0d1c2f !important;
+  color: #fff !important;
+}
+.each-user:hover {
+  background-color: #263d59;
+}
+.form-control {
+  border-style: none !important;
+}
+.avatar > img {
+  width: 5vw !important;
+  height: 10vh !important;
+  border-radius: 100px !important;
+}
+.card {
+  border-radius: 40px !important;
+}
+.row {
+  justify-content: space-between !important;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.no-news {
+  background-color: #0d1c2f !important;
+}
+.block {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}

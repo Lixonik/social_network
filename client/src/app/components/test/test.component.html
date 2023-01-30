@@ -1,0 +1,29 @@
+
+<!-- Двунаправленная привязка -->
+<input type="text" [(ngModel)]="text">
+<p>{{text}}</p>
+
+<!-- Однонаправленная привязка -->
+<input type="text" [ngModel]="text">
+<p>{{text}}</p>
+<!-- OR -->
+<input type="text" [value]="text">
+<p>{{text}}</p>
+
+<!-- Динамическая стилизация компонентов -->
+
+<!-- ngClass, ngStyle -->
+<div class="block" [ngStyle]="{'color': 'orange'}" >
+  <p class="block__item">hi</p>
+  <p class="block__item" [ngClass]="{class1:true}" >hello</p>
+  <p class="block__item" [ngClass]="{class2: true}" >world</p>
+</div>
+
+
+<div class="block" [ngClass]="{invisible: visibility}">
+  <p class="block__item">hi</p>
+  <p class="block__item">hello</p>
+  <p class="block__item">world</p>
+</div>
+
+<button (click)="toggle()">Toggle</button>

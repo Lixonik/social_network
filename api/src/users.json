@@ -1,0 +1,250 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "surname": "Ганцvyuv",
+      "name": "Михаил",
+      "patronymic": "Алексеевич",
+      "birthday": "23.10.2002",
+      "email": "gatz@yandex.ru",
+      "role": "User",
+      "status": "Active",
+      "friends": [
+        "2",
+        "3",
+        "4"
+      ],
+      "news": [
+        "Отдыхаю на пляже"
+      ],
+      "avatar": "https://avatars.mds.yandex.net/get-lpc/1364677/92bfe1ae-33e1-41d8-8720-028ba8df86cd/orig",
+      "password": "afrury59"
+    },
+    {
+      "id": "2",
+      "surname": "Смирнова",
+      "name": "Анна",
+      "patronymic": "Александровна",
+      "birthday": "23.10.2002",
+      "email": "ann@gmail.com",
+      "role": "User",
+      "status": "Blocked",
+      "friends": [
+        "3"
+      ],
+      "news": "Готовлюсь к сессии :(",
+      "avatar": "/points_girl.jpg"
+    },
+    {
+      "id": "3",
+      "surname": "Абдуллах",
+      "name": "Али",
+      "patronymic": "Каримович",
+      "birthday": "23.10.2002",
+      "email": "qdsqwdqr@mail.ru",
+      "role": "User",
+      "status": "Active",
+      "friends": [
+        "4"
+      ],
+      "news": [
+        "Второй день подряд делаю 3-ю лабу по вебу"
+      ],
+      "avatar": "/black_man.jpg"
+    },
+    {
+      "id": "4",
+      "surname": "Харри",
+      "name": "Ариадна",
+      "patronymic": "Уон",
+      "birthday": "23.10.2002",
+      "email": "lixonik@vk.com",
+      "role": "User",
+      "status": "Active",
+      "friends": [],
+      "avatar": "/ind_girl.jpg",
+      "news": []
+    },
+    {
+      "id": "5",
+      "email": "gatz1@yandex.ru",
+      "password": "$2a$07$x52Ztc4UPLHFIj2Nkb//HeCAWL.zZjgVF4T.uuvVNZc5RKY4LMq92",
+      "surname": "Ганцvyuv",
+      "name": "Михаил",
+      "birthday": "23.10.2002",
+      "role": "User",
+      "friends": [],
+      "news": []
+    },
+    {
+      "id": "6",
+      "email": "gatz3@yandex.ru",
+      "password": "$2a$07$783UYc8lXNR1aGD5cmVodemHAaTDmhHvRkRkxpRZpadEhIqh7nKZ6",
+      "surname": "Ганцvyuv",
+      "name": "Михаил",
+      "birthday": "23.10.2002",
+      "role": "User",
+      "friends": [],
+      "news": []
+    },
+    {
+      "id": "7",
+      "email": "gatz4@yandex.ru",
+      "password": "$2a$07$rwZMZblj9d6wkeADAhySQ.D3PK3e7dM78CT2g9p45AIOwj3EOfccW",
+      "surname": "Ганцvyuv",
+      "name": "Михаил",
+      "birthday": "23.10.2002",
+      "role": "User",
+      "status": "Not verified",
+      "friends": [],
+      "news": []
+    },
+    {
+      "id": "9",
+      "email": "shatalker1337@mail.ru",
+      "password": "$2a$07$g1r/2U/xTPreQc880IxnwuC/xTH3E3NjMU9v8CYW.RgVAJuM35Bku",
+      "surname": "Гузовский",
+      "name": "Кирилл",
+      "patronimyc": "Глебович",
+      "birthday": "2022-12-14",
+      "role": "User",
+      "status": "Not verified",
+      "friends": [
+        "8",
+        "undefined"
+      ],
+      "news": [
+        {
+          "content": "qwqwqwqw",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671555766714,
+          "id": 20
+        },
+        {
+          "content": "ssqsss",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671555775969,
+          "id": 21
+        },
+        {
+          "content": "sqsqs",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671555835062,
+          "id": 23
+        },
+        {
+          "content": "ййййййййй",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671556167601,
+          "id": 25
+        },
+        {
+          "content": "qqqq",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671556328339,
+          "id": 26
+        },
+        {
+          "content": "ййййй",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671556411664,
+          "id": 28
+        },
+        {
+          "content": "ssssssssss",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671556507020,
+          "id": 29
+        },
+        {
+          "content": "ssssssss",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671556539316,
+          "id": 30
+        },
+        {
+          "content": "qqqqqqqqq",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671556557551,
+          "id": 31
+        },
+        {
+          "content": "ssss",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671556601414,
+          "id": 32
+        },
+        {
+          "content": "qqqqq",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671556632425,
+          "id": 33
+        },
+        {
+          "content": "qqqqqq",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671556813207,
+          "id": 34
+        },
+        {
+          "content": "qqqqq",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671556818482,
+          "id": 35
+        },
+        {
+          "content": "ssssss",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671556860185,
+          "id": 36
+        },
+        {
+          "content": "aaaaa",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671557027982,
+          "id": 37
+        },
+        {
+          "content": "qwqwq",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671557203257,
+          "id": 38
+        },
+        {
+          "content": "qqqqq",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671557262594,
+          "id": 39
+        },
+        {
+          "content": "qqq",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671557273762,
+          "id": 40
+        },
+        {
+          "content": "qwqeqeq",
+          "from": "Гузовский Кирилл",
+          "timestamp": 1671557281757,
+          "id": 41
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "email": "borka.prokhorov@mail.ru",
+      "password": "$2a$07$0oAfuVjFfu0jLqHM.SNwtux078kjOT5WGlJLTmgijcL.Ep2bXttni",
+      "surname": "Прохоров",
+      "name": "Борис",
+      "patronimyc": "",
+      "birthday": "2022-12-08",
+      "role": "User",
+      "status": "Not verified",
+      "friends": [
+        "9"
+      ],
+      "news": []
+    }
+  ],
+  "lastPostId": 41
+}

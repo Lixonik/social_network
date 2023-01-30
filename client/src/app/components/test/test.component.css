@@ -1,0 +1,17 @@
+* {
+  margin-top: 5vh;
+  display: inline-flex;
+  margin-right: 100px;
+}
+
+.class1 {
+  color:red;
+}
+
+.class2 {
+  color: yellow;
+}
+
+.invisible {
+  display: none;
+}
